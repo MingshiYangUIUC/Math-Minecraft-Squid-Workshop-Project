@@ -12,4 +12,4 @@ scoreboard players operation y swMath_V %= C_62832 swMath_C
 
 # return
 scoreboard players operation vOut swMath_V = y swMath_V
-tellraw @a[tag=swMath_debug] [{"text":"Out: "},{"score":{"name": "vOut","objective": "swMath_V"}}]
+#tellraw @a[tag=swMath_debug] [{"text":"Out: "},{"score":{"name": "vOut","objective": "swMath_V"}}]

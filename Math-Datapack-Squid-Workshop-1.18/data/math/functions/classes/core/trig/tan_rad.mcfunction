@@ -32,4 +32,4 @@ execute if score xx swMath_V matches 15708 run scoreboard players set y swMath_V
 
 # return
 scoreboard players operation vOut swMath_V = y swMath_V
-tellraw @a[tag=swMath_debug] [{"text":"Out: "},{"score":{"name": "vOut","objective": "swMath_V"}}]
+#tellraw @a[tag=swMath_debug] [{"text":"Out: "},{"score":{"name": "vOut","objective": "swMath_V"}}]

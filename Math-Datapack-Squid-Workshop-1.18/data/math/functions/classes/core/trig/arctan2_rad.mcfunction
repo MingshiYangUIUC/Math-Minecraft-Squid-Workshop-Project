@@ -4,6 +4,8 @@
 
 # Get quadrants
 scoreboard players set Quad swMath_V 1
+execute if score vIn swMath_V matches 0 if score vIn2 swMath_V matches 0.. run scoreboard players set Quad swMath_V 12
+execute if score vIn swMath_V matches 0 if score vIn2 swMath_V matches ..-1 run scoreboard players set Quad swMath_V 34
 execute if score vIn swMath_V matches ..-1 if score vIn2 swMath_V matches 0.. run scoreboard players set Quad swMath_V 2
 execute if score vIn swMath_V matches ..-1 if score vIn2 swMath_V matches ..-1 run scoreboard players set Quad swMath_V 3
 
@@ -45,7 +47,8 @@ scoreboard players operation y swMath_V *= n2 swMath_V
 
 execute if score Quad swMath_V matches 2 run scoreboard players add y swMath_V 31416
 execute if score Quad swMath_V matches 3 run scoreboard players remove y swMath_V 31416
-
+execute if score Quad swMath_V matches 12 run scoreboard players set y swMath_V 15708
+execute if score Quad swMath_V matches 34 run scoreboard players set y swMath_V 47124
 scoreboard players operation y swMath_V %= C_62832 swMath_C
 
 # return

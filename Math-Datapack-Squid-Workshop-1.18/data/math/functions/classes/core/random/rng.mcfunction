@@ -19,4 +19,4 @@ scoreboard players operation RNG swMath_V *= C_2718281 swMath_C
 
 scoreboard players operation vOut swMath_V = RNG swMath_V
 
-tellraw @a[tag=swMath_debug] [{"text":"Out: "},{"score":{"name": "vOut","objective": "swMath_V"}}]
+#tellraw @a[tag=swMath_debug] [{"text":"Out: "},{"score":{"name": "vOut","objective": "swMath_V"}}]
