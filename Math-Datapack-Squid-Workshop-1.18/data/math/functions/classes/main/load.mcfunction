@@ -22,7 +22,6 @@ scoreboard players set C_-1 swMath_C -1
 scoreboard players set C_-10000 swMath_C -10000
 
 # Trignometric
-#scoreboard players set C_ swMath_C
 scoreboard players set C_3600000 swMath_C 3600000
 scoreboard players set C_62832 swMath_C 62832
 scoreboard players set C_60000 swMath_C 60000
