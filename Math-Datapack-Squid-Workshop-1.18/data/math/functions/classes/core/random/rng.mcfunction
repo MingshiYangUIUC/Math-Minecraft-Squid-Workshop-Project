@@ -2,7 +2,7 @@
 scoreboard players add RNGseed swMath_V 1
 
 execute store result score RNG swMath_V run time query gametime
-#tellraw @a [{"text":"0 "},{"score":{"name":"RNG","objective":"swMath_V"}},{"text":" "},{"score":{"name":"RNGseed","objective":"swMath_V"}}]
+#tellraw @a [{"text":"0 "},{"score":{"name": "RNG","objective":"swMath_V"}},{"text":" "},{"score":{"name": "RNGseed","objective":"swMath_V"}}]
 #execute store result score RNG2 swMath_V run data get entity @s UUID[0]
 
 scoreboard players operation RNG swMath_V *= RNGseed swMath_V
