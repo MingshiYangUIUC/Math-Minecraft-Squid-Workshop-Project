@@ -6,7 +6,7 @@ This datapack provide fast, high precision math operation functions using Scoreb
 - Constants are stored under objective **swMath_C**.
 - Variables, including inputs and outputs, are stored under objectove **swMath_V**.
 - The standard input and output have *units* of **10000**. i.e., the score **10000** is used to represent **1**, utilizing 4 digits for high precision computation. Actual error in computation is usually on magnitude of 0.01%.
-- No entity involved in calculations, avoiding entity selection ensures high throughout performance.
+- **_No entities_** involved in calculations, avoiding entity selection ensures high throughout performance.
 
 # Installation
 - Step 01 Download this repository as a zip and unpack.
