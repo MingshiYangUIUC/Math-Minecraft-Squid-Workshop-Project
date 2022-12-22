@@ -23,13 +23,13 @@ The main function directory is math:functions/classes/core/. All functions provi
 To execute a function, consult the table and run the command
 
     /function math:classes/core/Function
-### Functions that require 0 input include
+### Functions that require 0 input
 | Function | Description |
 | ----- | ----- |
 | random/rng | generate a psuedo random integer covering the full range of scoreboard |
 | util/swap | a shortcut to assign value of input **#vIn** using value of output **#vOut** |
 
-### Functions that require 1 scalar input **#vIn** include
+### Functions that require 1 scalar input **#vIn**
 | Function | Description |
 | ----- | ----- |
 | operations/square | compute square (i, ii) |
@@ -43,19 +43,19 @@ To execute a function, consult the table and run the command
 | util/deg2rad | convert from degrees to radians |
 | util/rad2deg | convert from radians to degrees |
 
-### Functions that require 2 scalar inputs **#vIn, #vIn2** include
+### Functions that require 2 scalar inputs **#vIn, #vIn2**
 | Function | Description |
 | ----- | ----- |
 | operations/division_4d | compute #vIn2 / #vIn with high precision |
 | trig/arctan2_rad | compute inverse tangent of  #vIn2 / #vIn choosing the quadrant correctly |
 
-### Functions that require 1 3D vector inputs **#vAi, #vAj, #vAk** include
+### Functions that require 1 3D vector inputs **#vAi, #vAj, #vAk**
 | Function | Description |
 | ----- | ----- |
 | vector/magnitude | compute magnitude of vector |
 | vector/unit | compute unit vector |
 
-### Functions that require 2 3D vector inputs **#vAi, #vAj, #vAk; #vBi, #vBj, #vBk** include
+### Functions that require 2 3D vector inputs **#vAi, #vAj, #vAk; #vBi, #vBj, #vBk**
 | Function | Description |
 | ----- | ----- |
 | vector/cross (iv) | compute cross product |
