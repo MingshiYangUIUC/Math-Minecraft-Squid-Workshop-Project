@@ -37,7 +37,7 @@ scoreboard players operation #kSqr swMath_V *= #kMag swMath_V
 #tellraw @a [{"text":"M: "},{"score":{"name": "#maxMag","objective": "swMath_V"}}]
 
 scoreboard players operation #vIn swMath_V = #maxMag swMath_V
-function math:classes/core/sqrt/sqrt
+function math:classes/core/operations/sqrt
 scoreboard players operation #magSqr swMath_V = #vOut swMath_V
 scoreboard players operation #magSqr swMath_V *= #C_10 swMath_C
 

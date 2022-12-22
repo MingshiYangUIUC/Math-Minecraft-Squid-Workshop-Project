@@ -22,7 +22,7 @@ scoreboard players add #y swMath_V 15707
 scoreboard players set #vIn swMath_V 100000000
 scoreboard players operation #x swMath_V *= #C_10000 swMath_C
 scoreboard players operation #vIn swMath_V -= #x swMath_V
-function math:classes/core/sqrt/sqrt
+function math:classes/core/operations/sqrt
 scoreboard players operation #sq swMath_V = #vOut swMath_V
 scoreboard players operation #sq swMath_V *= #y swMath_V
 scoreboard players operation #sq swMath_V /= #C_10000 swMath_C
