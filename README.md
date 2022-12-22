@@ -22,7 +22,7 @@ This datapack provide fast, high precision math operation functions using Scoreb
 The main function directory is math:functions/classes/core/. All functions provided are listed below.\
 To execute a function, consult the table and run the command
 
-    /function math:classes/core/Function
+        /function math:classes/core/Function
 ### Functions that require 0 input
 | Function | Description |
 | ----- | ----- |
@@ -70,13 +70,13 @@ To execute a function, consult the table and run the command
 Compute cosine of 0.5 radians:
 - Set input
 
-    /scoreboard players set #vIn swMath_V 5000
+        /scoreboard players set #vIn swMath_V 5000
 - Run function
 
-    /function math:classes/core/trig/cos_rad
+        /function math:classes/core/trig/cos_rad
 - Get output
 
-    /scoreboard players get #vOut swMath_V
+        /scoreboard players get #vOut swMath_V
 
 Which outputs 8776 matching the exact value 0.8775825619.
 
