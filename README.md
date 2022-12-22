@@ -78,7 +78,7 @@ Compute cosine of 0.5 radians:
 
         /scoreboard players get #vOut swMath_V
 
-Which outputs 8776 matching the exact value 0.8775825619.
+The above outputs 8776 which matches the exact value 0.8775825619.
 
 ### Note
 (i) Since the result may overflow the scoreboard, the magnitude is stored separately as **#vOut_Mag** and the **#vOut** may be scaled down to fit in the scoreboard. i.e. result = #vOut * #vOut_Mag
