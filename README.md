@@ -27,7 +27,7 @@ To execute a function, consult the table and run the command
 | Function | Description |
 | ----- | ----- |
 | random/rng | generate a psuedo random integer |
-| util/swap | a shortcut to assign value of output **#vOut** to input **#vIn** |
+| util/swap | a shortcut to assign value of input **#vIn** using value of output **#vOut** |
 
 ### Functions that require 1 scalar input **#vIn** include
 | Function | Description |
