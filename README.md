@@ -34,7 +34,7 @@ To execute a function, consult the table and run the command
 | Function | Description |
 | ----- | ----- |
 | operations/square | compute square (i, ii) |
-| sqrt/sqrt | compute square root (ii) |
+| operations/sqrt | compute square root (ii) |
 | trig/arccos_rad | compute inverse cosine (iii)|
 | trig/arcsin_rad | compute inverse sine |
 | trig/arctan_rad | compute inverse tangent |
