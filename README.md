@@ -81,8 +81,7 @@ Compute cosine of 0.5 radians:
 Which outputs 8776 matching the exact value 0.8775825619.
 
 ### Note
-(i) Since the result may overflow the scoreboard, the magnitude is stored separately as **#vOut_Mag** and the **#vOut** may be scaled down to fit in the scoreboard.
-- result = #vOut * #vOut_Mag
+(i) Since the result may overflow the scoreboard, the magnitude is stored separately as **#vOut_Mag** and the **#vOut** may be scaled down to fit in the scoreboard. i.e. result = #vOut * #vOut_Mag
 
 (ii) In square and square root operations, the input is considered _without_ units.
 
