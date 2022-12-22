@@ -23,13 +23,13 @@ The main function directory is math:functions/classes/core/. All functions provi
 To execute a function, consult the table and run the command
 
     /function math:classes/core/Function
-### Functions that require 0 input include:
+### Functions that require 0 input include
 | Function | Description |
 | ----- | ----- |
 | random/rng | generate a psuedo random integer |
 | util/swap | a shortcut to assign value of output **#vOut** to input **#vIn** |
 
-### Functions that require 1 scalar input **#vIn** include:
+### Functions that require 1 scalar input **#vIn** include
 | Function | Description |
 | ----- | ----- |
 | operations/square | compute square (i, ii) |
@@ -43,13 +43,13 @@ To execute a function, consult the table and run the command
 | util/deg2rad | convert from degrees to radians |
 | util/rad2deg | convert from radians to degrees |
 
-### Functions that require 2 scalar inputs **#vIn, #vIn2** include:'
+### Functions that require 2 scalar inputs **#vIn, #vIn2** include
 | Function | Description |
 | ----- | ----- |
 | operations/division_4d | compute #vIn2 / #vIn with high precision |
 | trig/arctan2_rad | compute inverse tangent of  #vIn2 / #vIn choosing the quadrant correctly |
 
-### Functions that require 1 3D vector inputs **#vAi, #vAj, #vAk** include:
+### Functions that require 1 3D vector inputs **#vAi, #vAj, #vAk** include
 | Function | Description |
 | ----- | ----- |
 | vector/magnitude | compute magnitude of vector |
