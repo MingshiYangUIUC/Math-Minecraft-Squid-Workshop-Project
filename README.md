@@ -1,8 +1,12 @@
 # Math-Minecraft-Squid-Workshop-Project
-Minecraft math helper.
+Minecraft math helper
 
 # Abstract
 This datapack provide fast, high precision math operation functions using Scoreboard.
+- Constants are stored under objective **swMath_C**.
+- Variables, including inputs and outputs, are stored under objectove **swMath_V**.
+- The standard input and output have *units* of **10000**. i.e., the score **10000** is used to represent **1**, utilizing 4 digits for high precision computation. Actual error in computation is usually on magnitude of 0.01%.
+- No entity involved in calculations, avoiding entity selection ensures high throughout performance.
 
 # Installation
 - Step 01 Download this repository as a zip and unpack.
@@ -13,11 +17,6 @@ This datapack provide fast, high precision math operation functions using Scoreb
 - Step 06 Enjoy
 
 # How to use
-## Overview
-- Constants are stored under objective **swMath_C**.
-- Variables, including inputs and outputs, are stored under objectove **swMath_V**.
-- The standard input and output have *units* of **10000**. i.e., the score **10000** is used to represent **1**, utilizing 4 digits for high precision computation. Actual error in computation is usually on magnitude of 0.01%.
-- No entity involved in calculations, avoiding entity selection ensures high throughout performance.
 
 ## List of functions
 The main function directory is math:functions/classes/core/. All functions provided are listed below.\
@@ -59,8 +58,8 @@ To execute a function, consult the table and run the command
 ### Functions that require 2 3D vector inputs **#vAi, #vAj, #vAk; #vBi, #vBj, #vBk** include
 | Function | Description |
 | ----- | ----- |
-| vector/cross | compute cross product |
-| vector/dot | compute dot product |
+| vector/cross (iv) | compute cross product |
+| vector/dot (iv) | compute dot product |
 
 ### The output values are one set from the following
 | Scalar | Vector |
@@ -89,6 +88,7 @@ Which outputs 8776 matching the exact value 0.8775825619.
 
 (iii) All trignometry operations use radians as unit of measurement.
 
+(iv) Potential overflow is not yet monitored and result is not yet scaled.
 
 # Projects powered by Math Datapack
 [Pool Datapack](https://github.com/MingshiYangUIUC/Pool-Minecraft-Squid-Workshop-Project)  \
