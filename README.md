@@ -1,6 +1,9 @@
 # Math-Minecraft-Squid-Workshop-Project
 Minecraft math helper by Mingshi Yang.
 
+
+![_MingshiYangUIUC_](Math-Datapack-Squid-Workshop/pack.png)
+
 # Abstract
 This datapack provide fast, high precision math operation functions using Scoreboard.
 - Constants are stored under objective **swMath_C**.
