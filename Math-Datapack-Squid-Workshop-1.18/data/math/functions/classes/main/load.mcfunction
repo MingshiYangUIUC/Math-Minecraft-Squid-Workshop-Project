@@ -32,5 +32,8 @@ scoreboard players set #C_2618 swMath_C 2618
 scoreboard players set #C_1309 swMath_C 1309
 scoreboard players set #C_15 swMath_C 15
 
-
+# Sqrt
 scoreboard players set #SQRT3 swMath_C 2
+
+# Message
+tellraw @a [{"text":"[Squid Workshop] ","color":"gray"},{"text":"Math Datapack is loaded. ","color": "gray","italic": true},{"text":"Help","color":"white","clickEvent":{"action":"open_url","value":"https://github.com/MingshiYangUIUC/Math-Minecraft-Squid-Workshop-Project"}}]
