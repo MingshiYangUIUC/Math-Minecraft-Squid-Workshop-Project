@@ -5,8 +5,7 @@ scoreboard objectives add swMath_V dummy
 scoreboard players set #C_2718281 swMath_C 2718281
 scoreboard players set #C_314159 swMath_C 314159
 scoreboard players set #C_100000 swMath_C 100000
-scoreboard players set #C_34642 swMath_C 34642
-scoreboard players set #C_17321 swMath_C 17321
+scoreboard players set #C_34641 swMath_C 34641
 scoreboard players set #C_10000 swMath_C 10000
 scoreboard players set #C_6250 swMath_C 6250
 scoreboard players set #C_2500 swMath_C 2500
