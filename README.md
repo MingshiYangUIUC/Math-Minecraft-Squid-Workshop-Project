@@ -1,5 +1,5 @@
 # Math-Minecraft-Squid-Workshop-Project
-Minecraft math helper by Mingshi Yang.
+Minecraft math helper by Mingshi Yang. All versions supporting datapack is supported. Check [Here](https://minecraft.fandom.com/wiki/Data_pack#Pack_format) and set the pack format for your game version. 
 
 
 ![_MingshiYangUIUC_](Math-Datapack-Squid-Workshop/pack.png)
