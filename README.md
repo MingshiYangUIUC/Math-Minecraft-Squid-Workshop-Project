@@ -26,7 +26,8 @@ To execute a function, consult the table and run the command
 ### Functions that require 0 input
 | Function | Description |
 | ----- | ----- |
-| random/rng | generate a psuedo random integer covering the full range of scoreboard |
+| random/randint_base | return a integer uniformly covering the full range of scoreboard |
+| random/randint_normal | return a integer from normal distribution, mean=0 and sd=10000 |
 | util/swap | a shortcut to assign value of input **#vIn** using value of output **#vOut** |
 
 ### Functions that require 1 scalar input **#vIn**
