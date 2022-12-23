@@ -47,7 +47,7 @@ To execute a function, consult the table and run the command
 ### Functions that require 2 scalar inputs **#vIn, #vIn2**
 | <div style="width:150px">Function</div> | <div style="width:450px">Description</div> | <div style="width:50px">Unit</div> |
 | ----- | ----- | ----- |
-| operations/division_4d | compute #vIn2 / #vIn with high precision | N/A |
+| operations/division_4d | compute #vIn2 / #vIn with high precision | 0.0001 |
 | trig/arctan2_rad | compute inverse tangent of  #vIn2 / #vIn <br />choosing the quadrant correctly | 0.0001 |
 
 ### Functions that require 1 3D vector inputs **#vAi, #vAj, #vAk**
