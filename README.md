@@ -1,12 +1,12 @@
 # Math-Minecraft-Squid-Workshop-Project
-Minecraft math helper
+Minecraft math helper by Mingshi Yang.
 
 # Abstract
 This datapack provide fast, high precision math operation functions using Scoreboard.
 - Constants are stored under objective **swMath_C**.
 - Variables, including inputs and outputs, are stored under objectove **swMath_V**.
-- The standard input and output have *units* of **10000**. i.e., the score **10000** is used to represent **1**, utilizing 4 digits for high precision computation. Actual error in computation is usually on magnitude of 0.01%.
-- **_No entities_** involved in calculations, avoiding entity selection ensures high throughout performance.
+- For high precision computation, the input and output may have *units* of **0.0001**. i.e., the score **10000** is used to represent **1**, utilizing 4 digits. Actual error in computation is usually on magnitude of 0.01%.
+- **_No entities_** involved in calculations, avoiding entity selection ensures high throughout performance and easy maintenance.
 
 # Installation
 - Step 01 Download this repository as a zip and unpack.
@@ -24,52 +24,52 @@ To execute a function, consult the table and run the command
 
         /function math:classes/core/Function
 ### Functions that require 0 input
-| Function | Description |
-| ----- | ----- |
-| random/randint_base | return an integer following uniform distribution:<br />Min = -2^31, Max = 2^31-1 |
-| random/randint_t | return an integer following t distribution:<br />N_Sample = **#vIn**, Mean = 0, SD = 10000 |
-| util/swap | a shortcut to assign value of input **#vIn** using value of output **#vOut** |
+| <div style="width:150px">Function</div> | <div style="width:450px">Description</div> | <div style="width:50px">Unit</div> |
+| ----- | ----- | ----- |
+| random/randint_base | return an integer following uniform distribution:<br />Min = -2^31, Max = 2^31-1 | N/A |
+| random/randint_t | return an integer following t distribution:<br />N_Sample = **#vIn**, Mean = 0, SD = 10000 | N/A |
+| util/swap | a shortcut to assign value of input **#vIn** using value of output **#vOut** | N/A |
 
 ### Functions that require 1 scalar input **#vIn**
-| Function | Description |
-| ----- | ----- |
-| operations/square | compute square (i, ii) |
-| operations/sqrt | compute square root (ii) |
-| trig/arccos_rad | compute inverse cosine (iii)|
-| trig/arcsin_rad | compute inverse sine |
-| trig/arctan_rad | compute inverse tangent |
-| trig/cos_rad | compute cosine |
-| trig/sin_rad | compute sine |
-| trig/tan_rad | compute tangent |
-| util/deg2rad | convert from degrees to radians |
-| util/rad2deg | convert from radians to degrees |
+| <div style="width:150px">Function</div> | <div style="width:450px">Description</div> | <div style="width:50px">Unit</div> |
+| ----- | ----- | ----- |
+| operations/square | compute square (1) (2) | N/A |
+| operations/sqrt | compute square root (2) | N/A |
+| trig/arccos_rad | compute inverse cosine (3) | 0.0001 |
+| trig/arcsin_rad | compute inverse sine | 0.0001 |
+| trig/arctan_rad | compute inverse tangent | 0.0001 |
+| trig/cos_rad | compute cosine | 0.0001 |
+| trig/sin_rad | compute sine | 0.0001 |
+| trig/tan_rad | compute tangent | 0.0001 |
+| util/deg2rad | convert from degrees to radians | 0.0001 |
+| util/rad2deg | convert from radians to degrees | 0.0001 |
 
 ### Functions that require 2 scalar inputs **#vIn, #vIn2**
-| Function | Description |
-| ----- | ----- |
-| operations/division_4d | compute #vIn2 / #vIn with high precision |
-| trig/arctan2_rad | compute inverse tangent of  #vIn2 / #vIn choosing the quadrant correctly |
+| <div style="width:150px">Function</div> | <div style="width:450px">Description</div> | <div style="width:50px">Unit</div> |
+| ----- | ----- | ----- |
+| operations/division_4d | compute #vIn2 / #vIn with high precision | N/A |
+| trig/arctan2_rad | compute inverse tangent of  #vIn2 / #vIn <br />choosing the quadrant correctly | 0.0001 |
 
 ### Functions that require 1 3D vector inputs **#vAi, #vAj, #vAk**
-| Function | Description |
-| ----- | ----- |
-| vector/magnitude | compute magnitude of vector |
-| vector/unit | compute unit vector |
+| <div style="width:150px">Function</div> | <div style="width:450px">Description</div> | <div style="width:50px">Unit</div> |
+| ----- | ----- | ----- |
+| vector/magnitude | compute magnitude of vector | 0.0001 |
+| vector/unit | compute unit vector | 0.0001 |
 
 ### Functions that require 2 3D vector inputs **#vAi, #vAj, #vAk; #vBi, #vBj, #vBk**
-| Function | Description |
-| ----- | ----- |
-| vector/cross (iv) | compute cross product |
-| vector/dot (iv) | compute dot product |
+| <div style="width:150px">Function</div> | <div style="width:450px">Description</div> | <div style="width:50px">Unit</div> |
+| ----- | ----- | ----- |
+| vector/cross (4) | compute cross product | N/A |
+| vector/dot (4) | compute dot product | N/A |
 
 ### The output values are one set from the following
-| Scalar | Vector |
+| <div style="width:150px">Scalar</div> | <div style="width:150px">Vector</div> |
 | ----- | ----- |
 | **#vOut** | **#vOi, #vOj, #vOk** |
 
 ## Example
 Compute cosine of 0.5 radians:
-- Set input
+- Set input, 0.5 radians is 5000 units
 
         /scoreboard players set #vIn swMath_V 5000
 - Run function
@@ -79,16 +79,16 @@ Compute cosine of 0.5 radians:
 
         /scoreboard players get #vOut swMath_V
 
-The above outputs 8776 which matches the exact value 0.8775825619.
+The above outputs 8776 units which matches the exact value 0.8775825619.
 
 ### Note
-(i) Since the result may overflow the scoreboard, the magnitude is stored separately as **#vOut_Mag** and the **#vOut** may be scaled down to fit in the scoreboard. i.e. result = #vOut * #vOut_Mag
+(1) Since the result may overflow the scoreboard, the magnitude is stored separately as **#vOut_Mag** and the **#vOut** may be scaled down to fit in the scoreboard. i.e. result = #vOut * #vOut_Mag
 
-(ii) In square and square root operations, the input is considered _without_ units.
+(2) In square and square root operations, the input is considered _without_ units.
 
-(iii) All trignometry operations use radians as unit of measurement.
+(3) All trignometry operations use radians as unit of measurement.
 
-(iv) Potential overflow is not yet monitored and result is not yet scaled.
+(4) Overflow is not yet monitored and result is not yet scaled.
 
 # Projects powered by Math Datapack
 [Pool Datapack](https://github.com/MingshiYangUIUC/Pool-Minecraft-Squid-Workshop-Project)  \
