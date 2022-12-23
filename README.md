@@ -1,6 +1,6 @@
 # Math-Minecraft-Squid-Workshop-Project
 Minecraft math helper by Mingshi Yang - Squid Workshop. \
-Minecraft 1.13+ is supported, you may check [here](https://minecraft.fandom.com/wiki/Data_pack#Pack_format) and set the [pack.mcmeta](Math-Datapack-Squid-Workshop/pack.mcmeta) file according to your game version.
+Minecraft 1.13+ is supported, you may consult [here](https://minecraft.fandom.com/wiki/Data_pack#Pack_format) and set the [pack.mcmeta](Math-Datapack-Squid-Workshop/pack.mcmeta) file according to your game version.
 
 
 ![_MingshiYangUIUC_](Math-Datapack-Squid-Workshop/pack.png)
