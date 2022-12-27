@@ -20,6 +20,6 @@ scoreboard players operation #vIn2 swMath_V = #vAk swMath_V
 function math:classes/core/operations/division_4d
 scoreboard players operation #vOk swMath_V = #vOut swMath_V
 
-tellraw @a [{"text":"i: "},{"score":{"name": "#vOi","objective": "swMath_V"}}]
-tellraw @a [{"text":"j: "},{"score":{"name": "#vOj","objective": "swMath_V"}}]
-tellraw @a [{"text":"k: "},{"score":{"name": "#vOk","objective": "swMath_V"}}]
+#tellraw @a [{"text":"i: "},{"score":{"name": "#vOi","objective": "swMath_V"}}]
+#tellraw @a [{"text":"j: "},{"score":{"name": "#vOj","objective": "swMath_V"}}]
+#tellraw @a [{"text":"k: "},{"score":{"name": "#vOk","objective": "swMath_V"}}]

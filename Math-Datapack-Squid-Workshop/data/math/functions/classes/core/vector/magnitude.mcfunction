@@ -50,4 +50,4 @@ execute unless score #vIn swMath_V >= #iSqr swMath_V unless score #vIn swMath_V 
 
 function math:classes/core/operations/sqrt
 scoreboard players operation #vOut swMath_V *= #magSqr swMath_V
-tellraw @a [{"text":"O: "},{"score":{"name": "#vOut","objective": "swMath_V"}}]
+#tellraw @a [{"text":"O: "},{"score":{"name": "#vOut","objective": "swMath_V"}}]
