@@ -52,6 +52,7 @@ To execute a function, consult the table and run the command
 | <div style="width:150px">Function</div> | <div style="width:450px">Description</div> | <div style="width:50px">Unit</div> |
 | ----- | ----- | ----- |
 | operations/division_4d | compute #vIn2 / #vIn with high precision | 0.0001 |
+| operations/multiply | compute #vIn * #vIn2 (1) | N/A |
 | trig/arctan2_rad | compute inverse tangent of  #vIn2 / #vIn <br />choosing the quadrant correctly | 0.0001 |
 
 ### Functions that require 1 3D vector inputs **#vAi, #vAj, #vAk**
@@ -88,7 +89,7 @@ The above outputs 8776 units which matches the exact value 0.8775825619.
 ### Note
 (1) Since the result may overflow the scoreboard, the magnitude is stored separately as **#vOut_Mag** and the **#vOut** may be scaled down to fit in the scoreboard. i.e. result = #vOut * #vOut_Mag
 
-(2) In square and square root operations, the input is considered _without_ units.
+(2) In these operations, the input is considered _without_ units.
 
 (3) All trignometry operations use radians as unit of measurement.
 
