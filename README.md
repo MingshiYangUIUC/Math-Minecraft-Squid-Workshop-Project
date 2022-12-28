@@ -7,7 +7,7 @@ Minecraft 1.13+ is supported, you may consult [here](https://minecraft.fandom.co
 
 # Abstract
 This datapack provide fast, high precision math operation functions using Scoreboard.
-- Constants are stored under objective **swMath_C**. Feel free to define more in [this file](Math-Datapack-Squid-Workshop/data/math/classes/main/load.mcfunction)
+- Constants are stored under objective **swMath_C**. Feel free to define more in [this file](Math-Datapack-Squid-Workshop/data/math/functions/classes/main/load.mcfunction)
 - Variables, including inputs and outputs, are stored under objectove **swMath_V**.
 - For high precision computation, the input and output may have *units* of **0.0001**. i.e., the score **10000** is used to represent **1**, utilizing 4 digits. Actual error in computation is usually on magnitude of 0.01%. One visualization of different magnitudes of error is [here](Gallery/Images/block_displacement.png). See [example](#Example) for implementation detail.
 - **_No entities_** involved in calculations, avoiding entity selection ensures high throughout performance and easy maintenance.
