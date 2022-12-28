@@ -74,7 +74,7 @@ To execute a function, consult the table and run the command
 | **#vOut** | **#vOi, #vOj, #vOk** |
 
 ## Example
-Compute cosine of 0.5 radians:
+Steps to compute cosine of 0.5 radians:
 - Set input, 0.5 radians is 5000 units
 
         /scoreboard players set #vIn swMath_V 5000
