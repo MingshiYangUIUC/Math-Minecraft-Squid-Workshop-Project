@@ -28,14 +28,14 @@ To execute a function, consult the table and run the command
 
         /function math:classes/core/Function
 ### Functions that require 0 input
-| <div style="width:150px">Function</div> | <div style="width:450px">Description</div> | <div style="width:50px">Unit</div> |
+| <div style="width:180px">Function</div> | <div style="width:450px">Description</div> | <div style="width:50px">Unit</div> |
 | ----- | ----- | ----- |
 | random/randint_base | return an integer following uniform distribution:<br />Min = -2^31, Max = 2^31-1 | N/A |
 | random/randint_t | return an integer following t distribution:<br />N_Sample = **#vIn**, Mean = 0, SD = 10000 | N/A |
 | util/swap | a shortcut to assign value of input **#vIn** using value of output **#vOut** | N/A |
 
 ### Functions that require 1 scalar input **#vIn**
-| <div style="width:150px">Function</div> | <div style="width:450px">Description</div> | <div style="width:50px">Unit</div> |
+| <div style="width:180px">Function</div> | <div style="width:450px">Description</div> | <div style="width:50px">Unit</div> |
 | ----- | ----- | ----- |
 | operations/square | compute square (1) (2) | N/A |
 | operations/sqrt | compute square root (2) | N/A |
@@ -49,7 +49,7 @@ To execute a function, consult the table and run the command
 | util/rad2deg | convert from radians to degrees | 0.0001 |
 
 ### Functions that require 2 scalar inputs **#vIn, #vIn2**
-| <div style="width:150px">Function</div> | <div style="width:450px">Description</div> | <div style="width:50px">Unit</div> |
+| <div style="width:180px">Function</div> | <div style="width:450px">Description</div> | <div style="width:50px">Unit</div> |
 | ----- | ----- | ----- |
 | operations/division_4d | compute #vIn2 / #vIn with high precision | 0.0001 |
 | operations/division_round | compute #vIn2 / #vIn with rounding of output integer | N/A |
@@ -57,19 +57,19 @@ To execute a function, consult the table and run the command
 | trig/arctan2_rad | compute inverse tangent of  #vIn2 / #vIn <br />choosing the quadrant correctly | 0.0001 |
 
 ### Functions that require 1 3D vector inputs **#vAi, #vAj, #vAk**
-| <div style="width:150px">Function</div> | <div style="width:450px">Description</div> | <div style="width:50px">Unit</div> |
+| <div style="width:180px">Function</div> | <div style="width:450px">Description</div> | <div style="width:50px">Unit</div> |
 | ----- | ----- | ----- |
 | vector/magnitude | compute magnitude of vector | 0.0001 |
 | vector/unit | compute unit vector | 0.0001 |
 
 ### Functions that require 2 3D vector inputs **#vAi, #vAj, #vAk; #vBi, #vBj, #vBk**
-| <div style="width:150px">Function</div> | <div style="width:450px">Description</div> | <div style="width:50px">Unit</div> |
+| <div style="width:180px">Function</div> | <div style="width:450px">Description</div> | <div style="width:50px">Unit</div> |
 | ----- | ----- | ----- |
 | vector/cross (4) | compute cross product | N/A |
 | vector/dot (4) | compute dot product | N/A |
 
 ### The output values are one set from the following
-| <div style="width:150px">Scalar</div> | <div style="width:150px">Vector</div> |
+| <div style="width:180px">Scalar</div> | <div style="width:150px">Vector</div> |
 | ----- | ----- |
 | **#vOut** | **#vOi, #vOj, #vOk** |
 
