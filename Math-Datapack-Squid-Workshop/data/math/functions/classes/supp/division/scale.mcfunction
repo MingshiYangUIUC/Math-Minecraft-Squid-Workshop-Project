@@ -12,5 +12,5 @@ execute if score #yabs swMath_V matches 0..214748 run scoreboard players operati
 
 scoreboard players operation #vOut swMath_V = #xabs swMath_V
 execute if score #power swMath_V matches 1.. run scoreboard players operation #vIn swMath_V = #xabs swMath_V
-execute if score #power swMath_V matches 1.. run function math:classes/supp/division/div10
+execute if score #power swMath_V matches 1.. run function math:classes/supp/division/div10_4d
 scoreboard players operation #xabs swMath_V = #vOut swMath_V
