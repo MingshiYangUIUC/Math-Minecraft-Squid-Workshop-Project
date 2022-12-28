@@ -2,9 +2,8 @@
 # so the true output is #vOut * #vOut_Mag
 
 scoreboard players set #vOut_Mag swMath_V 1
-execute if score #vIn swMath_V matches ..-1 run scoreboard players operation #vIn swMath_V *= C_-1 swMath_C
-execute if score #vIn swMath_V matches ..46340 run scoreboard players set #vOut_Mag swMath_V 1
-execute if score #vIn swMath_V matches 46341.. run function math:classes/supp/square/div10
+execute if score #vIn swMath_V matches ..-1 run scoreboard players operation #vIn swMath_V *= #C_-1 swMath_C
+execute if score #vIn swMath_V matches 46341.. run function math:classes/supp/square/div10_round
 
 scoreboard players operation #vOut swMath_V = #vIn swMath_V
 scoreboard players operation #vOut swMath_V *= #vOut swMath_V
