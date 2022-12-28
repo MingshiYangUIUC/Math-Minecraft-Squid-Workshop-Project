@@ -52,6 +52,7 @@ To execute a function, consult the table and run the command
 | <div style="width:150px">Function</div> | <div style="width:450px">Description</div> | <div style="width:50px">Unit</div> |
 | ----- | ----- | ----- |
 | operations/division_4d | compute #vIn2 / #vIn with high precision | 0.0001 |
+| operations/division_round | compute #vIn2 / #vIn with rounding of output integer | N/A |
 | operations/multiply | compute #vIn * #vIn2 (1) | N/A |
 | trig/arctan2_rad | compute inverse tangent of  #vIn2 / #vIn <br />choosing the quadrant correctly | 0.0001 |
 
