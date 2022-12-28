@@ -23,6 +23,9 @@ scoreboard players operation #maxMag swMath_V > #iMag swMath_V
 scoreboard players operation #maxMag swMath_V > #jMag swMath_V
 scoreboard players operation #maxMag swMath_V > #kMag swMath_V
 
+# have to be 100mag for at least one input
+execute if score #maxMag swMath_V matches ..99 run scoreboard players set #maxMag swMath_V 100
+
 scoreboard players operation #iSqr swMath_V /= #maxMag swMath_V
 scoreboard players operation #jSqr swMath_V /= #maxMag swMath_V
 scoreboard players operation #kSqr swMath_V /= #maxMag swMath_V
