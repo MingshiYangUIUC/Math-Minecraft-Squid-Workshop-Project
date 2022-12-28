@@ -31,7 +31,7 @@ To execute a function, consult the table and run the command
 | <div style="width:180px">Function</div> | <div style="width:450px">Description</div> | <div style="width:50px">Unit</div> |
 | ----- | ----- | ----- |
 | random/randint_base | return an integer following uniform distribution:<br />Min = -2^31, Max = 2^31-1 | N/A |
-| random/randint_t | return an integer following t distribution:<br />N_Sample = **#vIn**, Mean = 0, SD = 10000 | N/A |
+| random/randint_t | return an integer following t distribution, N >= 30 ~ Z distribution<br />N_Sample = **#vIn**, Mean = 0, SD = 10000 | N/A |
 | util/swap | a shortcut to assign value of input **#vIn** using value of output **#vOut** | N/A |
 
 ### Functions that require 1 scalar input **#vIn**
