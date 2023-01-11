@@ -5,16 +5,16 @@ Minecraft 1.13+ is supported, you may consult [here](https://minecraft.fandom.co
 
 ![_MingshiYangUIUC_](Math-Datapack-Squid-Workshop/pack.png)
 
-# Abstract
+# Introduction
 This datapack provide fast, high precision math operation functions using Scoreboard.
 - Constants are stored under objective **swMath_C**. Feel free to define more in [this file](Math-Datapack-Squid-Workshop/data/math/functions/classes/main/load.mcfunction).
-- Variables, including inputs and outputs, are stored under objectove **swMath_V**.
+- Variables, including inputs and outputs, are stored under objective **swMath_V**.
 - For high precision computation, the input and output may have *units* of **0.0001**. i.e., the score **10000** is used to represent **1**, utilizing 4 digits. Actual error in computation is usually on magnitude of 0.01%. One visualization of different magnitudes of error is [here](Gallery/Images/block_displacement.png). See [example](#Example) for implementation detail.
 - **_No entities_** involved in calculations, avoiding entity selection ensures high throughout performance and easy maintenance.
 
 # Installation
 - Step 01 Download this repository as a zip and unpack.
-- Step 02 Go to minecraft directory, usually "C:/Users/youUserName/AppData/Roaming/.minecraft".
+- Step 02 Go to Minecraft directory, usually "C:/Users/youUserName/AppData/Roaming/.minecraft".
 - Step 03 Choose the world folder in which you want to install the pack. Go to .../saves/world/datapacks folder.
 - Step 04 Open Minecraft and open the world.
 - Step 05 Type "/reload" command then press enter.
@@ -23,7 +23,7 @@ This datapack provide fast, high precision math operation functions using Scoreb
 # How to use
 
 ## List of functions
-The main function directory is math:functions/classes/core/. All functions provided are listed below.\
+The main function directory is math:functions/classes/core/. All functions provided are listed below. \
 To execute a function, consult the table and run the command
 
         /function math:classes/core/Function
@@ -71,7 +71,7 @@ To execute a function, consult the table and run the command
 ### The output values are one set from the following
 | <div style="width:180px">Scalar</div> | <div style="width:150px">Vector</div> |
 | ----- | ----- |
-| **#vOut** | **#vOi, #vOj, #vOk** |
+| **#vOut**, **#vOut_Mag** if needed | **#vOi, #vOj, #vOk** |
 
 ## Example
 Steps to compute cosine of 0.5 radians:
@@ -92,7 +92,7 @@ The above outputs 8776 units which matches the exact value 0.8775825619.
 
 (2) In these operations, the input is considered _without_ units.
 
-(3) All trignometry operations use radians as unit of measurement.
+(3) All trigonometry operations use radians as unit of measurement.
 
 (4) Overflow is not yet monitored and result is not yet scaled.
 
