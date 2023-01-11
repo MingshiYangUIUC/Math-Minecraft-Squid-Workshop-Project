@@ -85,7 +85,7 @@ To execute a function, consult the table and run the command
 - Get output
 
         /scoreboard players get #vOut swMath_V
-        _The above outputs 39297 units which matches the exact value 3.929717341._
+_The above outputs 39297 units which matches the exact value 3.929717341._
 
 ### Steps to compute cosine of 0.5 radians:
 - Set input, 0.5 radians is 5000 units
@@ -97,8 +97,7 @@ To execute a function, consult the table and run the command
 - Get output
 
         /scoreboard players get #vOut swMath_V
-        
-        _The above outputs 8776 units which matches the exact value 0.8775825619._
+_The above outputs 8776 units which matches the exact value 0.8775825619._
 
 ### Note
 (1) Since the result may overflow the scoreboard, the magnitude is stored separately as **#vOut_Mag** and the **#vOut** may be scaled down to fit in the scoreboard. i.e. result = #vOut * #vOut_Mag
