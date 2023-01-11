@@ -26,7 +26,12 @@ execute if score #ydx swMath_V matches ..9999 run function math:classes/supp/div
 #tellraw @a[tag=swMath_debug] [{"text":"YDX: "},{"score":{"name": "#ydx","objective": "swMath_V"}}]
 #tellraw @a[tag=swMath_debug] [{"text":"#yabs: "},{"score":{"name": "#yabs","objective": "swMath_V"}},{"text":" #xabs: "},{"score":{"name": "#xabs","objective": "swMath_V"}}]
 
-scoreboard players operation #yabs swMath_V /= #xabs swMath_V
+# round division
+scoreboard players operation #vIn2 swMath_V = #yabs swMath_V
+scoreboard players operation #vIn swMath_V = #xabs swMath_V
+function math:classes/core/operations/division_round
+scoreboard players operation #yabs swMath_V = #vOut swMath_V
+#scoreboard players operation #yabs swMath_V /= #xabs swMath_V
 #tellraw @a[tag=swMath_debug] [{"text":"ABS divide: "},{"score":{"name": "#yabs","objective": "swMath_V"}}]
 
 #tellraw @a[tag=swMath_debug] [{"text":"Sign: "},{"score":{"name": "#n","objective": "swMath_V"}}]

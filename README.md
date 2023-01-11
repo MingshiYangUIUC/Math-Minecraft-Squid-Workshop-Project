@@ -74,7 +74,20 @@ To execute a function, consult the table and run the command
 | **#vOut**, **#vOut_Mag** if needed | **#vOi, #vOj, #vOk** |
 
 ## Example
-Steps to compute cosine of 0.5 radians:
+### Steps to compute 123456 / 31416 (direct scoreboard operation returns 3):
+- Set input
+
+        /scoreboard players set #vIn2 swMath_V 123456
+        /scoreboard players set #vIn swMath_V 31416
+- Run function
+
+        /function math:classes/core/operations/division_4d
+- Get output
+
+        /scoreboard players get #vOut swMath_V
+        _The above outputs 39297 units which matches the exact value 3.929717341._
+
+### Steps to compute cosine of 0.5 radians:
 - Set input, 0.5 radians is 5000 units
 
         /scoreboard players set #vIn swMath_V 5000
@@ -84,8 +97,7 @@ Steps to compute cosine of 0.5 radians:
 - Get output
 
         /scoreboard players get #vOut swMath_V
-
-The above outputs 8776 units which matches the exact value 0.8775825619.
+        _The above outputs 8776 units which matches the exact value 0.8775825619._
 
 ### Note
 (1) Since the result may overflow the scoreboard, the magnitude is stored separately as **#vOut_Mag** and the **#vOut** may be scaled down to fit in the scoreboard. i.e. result = #vOut * #vOut_Mag
