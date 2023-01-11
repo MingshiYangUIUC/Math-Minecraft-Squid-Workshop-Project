@@ -1,6 +1,6 @@
 # Math-Minecraft-Squid-Workshop-Project
 Minecraft math helper by Mingshi Yang - Squid Workshop. \
-Minecraft 1.13+ is supported, you may consult [here](https://minecraft.fandom.com/wiki/Data_pack#Pack_format) and set the [pack.mcmeta](Math-Datapack-Squid-Workshop/pack.mcmeta) file according to your game version.
+Minecraft *Java Edition 1.13+* is supported, you may consult [here](https://minecraft.fandom.com/wiki/Data_pack#Pack_format) and set the [pack.mcmeta](Math-Datapack-Squid-Workshop/pack.mcmeta) file according to your game version.
 
 
 ![_MingshiYangUIUC_](Math-Datapack-Squid-Workshop/pack.png)
@@ -10,7 +10,7 @@ This datapack provide fast, high precision math operation functions using Scoreb
 - Constants are stored under objective **swMath_C**. Feel free to define more in [this file](Math-Datapack-Squid-Workshop/data/math/functions/classes/main/load.mcfunction).
 - Variables, including inputs and outputs, are stored under objective **swMath_V**.
 - For high precision computation, the input and output may have *units* of **0.0001**. i.e., the score **10000** is used to represent **1**, utilizing 4 digits. Actual error in computation is usually on magnitude of 0.01%. One visualization of different magnitudes of error is [here](Gallery/Images/block_displacement.png). See [example](#Example) for implementation detail.
-- **_No entities_** involved in calculations, avoiding entity selection ensures high throughout performance and easy maintenance.
+- **_No entities_** involved in calculations, avoiding entity selection ensures high throughout performance, compatibility and easy maintenance.
 
 # Installation
 - Step 01 Download this repository as a zip and unpack.
