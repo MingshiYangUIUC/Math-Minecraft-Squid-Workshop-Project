@@ -97,6 +97,7 @@ To execute a function, consult the table and run the command
 - Get output
 
         /scoreboard players get #vOut swMath_V
+        
         _The above outputs 8776 units which matches the exact value 0.8775825619._
 
 ### Note
