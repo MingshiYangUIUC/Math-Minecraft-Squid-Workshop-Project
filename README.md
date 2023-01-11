@@ -74,6 +74,15 @@ To execute a function, consult the table and run the command
 | ----- | ----- |
 | **#vOut**, **#vOut_Mag** if needed | **#vOi, #vOj, #vOk** |
 
+### Note
+(1) Since the result may overflow the scoreboard, the magnitude is stored separately as **#vOut_Mag** and the **#vOut** may be scaled down to fit in the scoreboard. i.e. result = #vOut * #vOut_Mag
+
+(2) In these operations, the input is considered _without_ units.
+
+(3) All trigonometry operations use radians as unit of measurement.
+
+(4) Overflow is not yet monitored and result is not yet scaled.
+
 ## Example
 ### Steps to compute 123456 / 31416 (direct scoreboard operation /= returns 3):
 - Set inputs
@@ -99,15 +108,6 @@ _The above outputs 39297 units which matches the exact value 3.929717341._
 
         /scoreboard players get #vOut swMath_V
 _The above outputs 8776 units which matches the exact value 0.8775825619._
-
-### Note
-(1) Since the result may overflow the scoreboard, the magnitude is stored separately as **#vOut_Mag** and the **#vOut** may be scaled down to fit in the scoreboard. i.e. result = #vOut * #vOut_Mag
-
-(2) In these operations, the input is considered _without_ units.
-
-(3) All trigonometry operations use radians as unit of measurement.
-
-(4) Overflow is not yet monitored and result is not yet scaled.
 
 # Projects powered by Math Datapack
 [Pool Datapack](https://github.com/MingshiYangUIUC/Pool-Minecraft-Squid-Workshop-Project)  \
