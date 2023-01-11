@@ -9,6 +9,7 @@ Minecraft *Java Edition 1.13+* is supported, you may consult [here](https://mine
 This datapack provide fast, high precision math operation functions using Scoreboard.
 - **Constants** are stored under objective **swMath_C**. Feel free to define more in [this file](Math-Datapack-Squid-Workshop/data/math/functions/classes/main/load.mcfunction).
 - **Variables**, including inputs and outputs, are stored under objective **swMath_V**.
+- "sw" means Squid Workshop.
 - For high precision computation, the input and output may have *units* of **0.0001**. i.e., the score **10000** is used to represent **1**, utilizing 4 digits. Actual error in computation is usually on magnitude of 0.01%. One visualization of different magnitudes of error is [here](Gallery/Images/block_displacement.png). See [example](#Example) for implementation detail.
 - **_No entities_** involved in calculations, avoiding entity selection ensures high throughout performance, compatibility and easy maintenance.
 
@@ -31,7 +32,6 @@ To execute a function, consult the table and run the command
 | <div style="width:180px">Function</div> | <div style="width:450px">Description</div> | <div style="width:50px">Unit</div> |
 | ----- | ----- | ----- |
 | random/randint_base | return an integer following uniform distribution:<br />Min = -2^31, Max = 2^31-1 | N/A |
-| random/randint_t | return an integer following t distribution, N >= 30 ~ Z distribution<br />N_Sample = **#vIn**, Mean = 0, SD = 10000 | N/A |
 | util/swap | a shortcut to assign value of input **#vIn** using value of output **#vOut** | N/A |
 
 ### Functions that require 1 scalar input **#vIn**
@@ -39,6 +39,7 @@ To execute a function, consult the table and run the command
 | ----- | ----- | ----- |
 | operations/square | compute square (1) (2) | N/A |
 | operations/sqrt | compute square root (2) | N/A |
+| random/randint_t | return an integer following t distribution given degrees of freedom. <br />DoF >= 30 ~ Z distribution. Mean = 0, SD = 10000 | N/A |
 | trig/arccos_rad | compute inverse cosine (3) | 0.0001 |
 | trig/arcsin_rad | compute inverse sine | 0.0001 |
 | trig/arctan_rad | compute inverse tangent | 0.0001 |
