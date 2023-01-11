@@ -74,8 +74,8 @@ To execute a function, consult the table and run the command
 | **#vOut**, **#vOut_Mag** if needed | **#vOi, #vOj, #vOk** |
 
 ## Example
-### Steps to compute 123456 / 31416 (direct scoreboard operation returns 3):
-- Set input
+### Steps to compute 123456 / 31416 (direct scoreboard operation /= returns 3):
+- Set inputs
 
         /scoreboard players set #vIn2 swMath_V 123456
         /scoreboard players set #vIn swMath_V 31416
