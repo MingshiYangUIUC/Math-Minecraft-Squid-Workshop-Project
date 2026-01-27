@@ -44,7 +44,7 @@ scoreboard players operation #vIn swMath_V += #kSqr swMath_V
 
 # if result is smaller than any inputs, unfortunately overflow happens and we need to rescale everything
 
-execute unless score #vIn swMath_V >= #iSqr swMath_V unless score #vIn swMath_V >= #iSqr swMath_V unless score #vIn swMath_V >= #iSqr swMath_V run function math:classes/supp/magnitude/rescale10
+execute unless score #vIn swMath_V >= #iSqr swMath_V unless score #vIn swMath_V >= #jSqr swMath_V unless score #vIn swMath_V >= #kSqr swMath_V run function math:classes/supp/magnitude/rescale10
 
 #tellraw @a [{"text":"Osq: "},{"score":{"name": "#vIn","objective": "swMath_V"}}]
 
