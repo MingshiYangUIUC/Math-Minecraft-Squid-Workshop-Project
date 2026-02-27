@@ -21,8 +21,6 @@ This datapack provide fast, high precision math operation functions using Scoreb
 - Step 05 Type "/reload" command then press enter.
 - Step 06 Enjoy
 
-For Windows users, *swMath_sync.bat* is provided to facilitate redistribution and pack update. To install a new copy or update the pack with the most recent version, simply copy it to your desired .../saves/world/datapacks folder, and double click it there. It will download and extract the math datapack for you from GitHub. 
-
 # How to use
 
 ## List of functions
@@ -117,7 +115,7 @@ _The above outputs 8776 units which matches the exact value 0.8775825619._
 
 # Terms of Use
 
-**NO COMMERCIAL USE.** 
+**Feel free to reuse with credit!** 
 
 ## License
 [Mozilla Public License 2.0](https://github.com/MingshiYangUIUC/Autoaim-Minecraft-Squid-Workshop-Project/blob/main/LICENSE)
