@@ -14,6 +14,11 @@ This datapack provide fast, high precision math operation functions using Scoreb
 - **_No entities_** involved in calculations, avoiding entity selection ensures high throughout performance, compatibility and easy maintenance.
 
 # Installation
+## Platforms
+- [Modrinth](https://modrinth.com/datapack/math-datapack)
+- [CourseForge](https://legacy.curseforge.com/minecraft/data-packs/scoreboard-math)
+
+## Manual installation from Source
 - Step 01 Download this repository as a zip and unpack.
 - Step 02 Go to Minecraft directory, usually "C:/Users/youUserName/AppData/Roaming/.minecraft".
 - Step 03 Choose the world folder in which you want to install the pack. Go to .../saves/world/datapacks folder.
